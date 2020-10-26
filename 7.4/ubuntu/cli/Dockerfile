@@ -30,7 +30,6 @@ RUN apt-get -y --no-install-recommends install \
         php7.4-zip
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
-    && composer global require hirak/prestissimo \
     && composer clear-cache
 
 RUN apt-get clean \
